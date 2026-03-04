@@ -1,48 +1,45 @@
 export const SEARCH_CONFIG = {
-  maxPrice: 340000,
-  minSqm: 80,
-  minRooms: 3, // 2 bedrooms + living
-  minBathrooms: 2,
+  maxPrice: 110000,
+  minSqm: 45,
+  maxSqm: 80,
+  minRooms: 2, 
+  maxRooms: 2, 
+  minBathrooms: 1,
+  maxBathrooms: 1,
   requireClosedKitchen: true,
   areas: [
-    "Tineretului",
-    "Timpuri Noi",
-    "Calea Calarasilor",
-    "Bulevardul Corneliu Coposu",
-    "Strada Delea Veche",
-    "Strada Delea Noua",
-    "Bulevardul Mihai Eminescu",
-    "Strada Vatra Luminoasa",
-    "Strada Campia Libertatii",
-    "Bulevardul Liviu Rebreanu",
-    "Bulevardul Decebal",
-    "Bulevardul Burebista",
-    "Calea Dudesti",
-    "Bulevardul Dacia",
-    "Strada Eufrosina Popescu",
-    "Strada Racari",
-    "Strada Diligentei",
-    "Strada Dristorului",
-    "Strada Traian Popovici",
-    "Strada Popa Nan",
-    "Dristor",
-    "Titan",
-    "Vitan",
-    "Iancului",
-    "Obor",
-    "Unirii",
-    "Nicolae Grigorescu",
-    "1 Decembrie",
-    "Pallady",
-    "Nicolae Teclu",
-    "Sector 3"
+    // Crangasi and surroundings
+    "Crangasi",
+    "Calea Crangasi",
+    "Bulevardul Constructorilor",
+    "Strada Ceahlau",
+    "Parcul Crangasi",
+    "Giulesti",
+    "Calea Giulesti",
+    // Bucurestii Noi
+    "Bucurestii Noi",
+    "Bulevardul Bucurestii Noi",
+    "Bazilescu",
+    "Pajura",
+    "Strada Jiului",
+    "Calea Grivitei",
+    "Chitila",
+    // Aviatiei
+    "Aviatiei",
+    "Bulevardul Aerogarii",
+    "Bulevardul Ficusului",
+    "Strada Smaranda Braescu",
+    "Strada Bucuresti-Ploiesti",
+    "Baneasa",
+    "Herastrau",
+    "Pipera",
+    "Sector 1"
   ],
-  prioritizePost2010: true,
-  priorityYear: 2010
+  priorityYear: 1980
 };
 
 export const EMAIL_CONFIG = {
-  minListings: 8,
+  minListings: 4,
   maxListings: 15
 };
 

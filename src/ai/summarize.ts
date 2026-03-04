@@ -29,21 +29,20 @@ NORMALIZATION RULES:
 FILTERING CRITERIA (STRICT):
 ✓ BUY listings only (no rent)
 ✓ Price: Max €${SEARCH_CONFIG.maxPrice}
-✓ Size: Min ${SEARCH_CONFIG.minSqm} sqm
-✓ Rooms: Min ${SEARCH_CONFIG.minRooms} rooms (2 bedrooms + living)
-✓ Bathrooms: Min ${SEARCH_CONFIG.minBathrooms}
-✓ Kitchen: Closed kitchen required
+✓ Size: Min ${SEARCH_CONFIG.minSqm} sqm, Max ${SEARCH_CONFIG.maxSqm}
+✓ Rooms: Min ${SEARCH_CONFIG.minRooms} rooms, Max ${SEARCH_CONFIG.maxRooms} 
+✓ Bathrooms: Min ${SEARCH_CONFIG.minBathrooms}, Max ${SEARCH_CONFIG.maxBathrooms}
+✓ Kitchen: Closed kitchen ${SEARCH_CONFIG.requireClosedKitchen}
 ✓ Areas: ${SEARCH_CONFIG.areas.join(", ")}
 ✓ STRONG preference for buildings built after ${SEARCH_CONFIG.priorityYear}
 
 RANKING SCORE (0-100):
 +30 points: Built after ${SEARCH_CONFIG.priorityYear}
-+30 points: Individual house (not apartment)
-+20 points: Price under €300,000
-+15 points: 3+ bathrooms
-+10 points: 100+ sqm
-+10 points: Premium areas (Tineretului, Unirii, Oraselul Copiilor)
-+5 points: 4+ rooms
++20 points: Price under €100,000
++15 points: 2+ bathrooms
++10 points: 50+ sqm
++10 points: Premium areas
++5 points: 3+ rooms
 +10 points: Complete data (no "verify" flags)
 
 DIGEST FORMAT:
